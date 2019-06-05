@@ -1,80 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragmentcontainer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="10dp"
     android:background="@drawable/login_gradient_bg"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/tv_heading"
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:layout_gravity="center"
-        android:padding="30dp"
-        android:layout_marginBottom="10dp"
-        android:src="@drawable/logo"
-        />
+        android:layout_height="wrap_content"></android.support.v4.view.ViewPager>
 
-    <TextView
-        android:id="@+id/tv_username"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingLeft="10dp"
-        android:textSize="20sp"
-        android:drawableLeft="@drawable/ic_action_username"
-        android:drawablePadding="5dp"
-        android:textColor="#ccc"
-        android:text="Username : "
-        />
-
-    <EditText
-        android:id="@+id/et_un"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:layout_marginBottom="20dp"
-        android:hint="Enter username" />
-
-    <TextView
-        android:id="@+id/tv_password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingLeft="10dp"
-        android:textSize="20sp"
-        android:textColor="#ccc"
-        android:drawableLeft="@drawable/ic_action_password"
-        android:drawablePadding="5dp"
-        android:text="Password : "
-        />
-
-    <EditText
-        android:id="@+id/et_pw"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:layout_marginBottom="20dp"
-        android:hint="Enter Password"/>
-
-    <Button
-        android:id="@+id/btn_login"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center"
-        android:background="#a6ab66"
-        android:text="Login" />
-
-    <Button
-        android:id="@+id/btn_register"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_margin="10dp"
-        android:layout_gravity="center"
-        android:background="#a6ab66"
-        android:text="Register" />
 
 </LinearLayout>
